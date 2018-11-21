@@ -35,7 +35,7 @@ endif()
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/doc/cmake/t2" TYPE FILE FILES
     "/home/qy/software/slambook/2018-11-19-exercise/COPYRIGHT"
-    "/home/qy/software/slambook/2018-11-19-exercise/README"
+    "/home/qy/software/slambook/2018-11-19-exercise/README.md"
     )
 endif()
 

@@ -90,7 +90,7 @@ useHello_EXTERNAL_OBJECTS =
 
 ../bin/useHello: src_makefiles/CMakeFiles/useHello.dir/useHello.cpp.o
 ../bin/useHello: src_makefiles/CMakeFiles/useHello.dir/build.make
-../bin/useHello: ../lib/libhello_shared.so
+../bin/useHello: ../lib/libhello.so
 ../bin/useHello: src_makefiles/CMakeFiles/useHello.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/qy/software/slambook/2018-11-19-exercise/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable ../../bin/useHello"
 	cd /home/qy/software/slambook/2018-11-19-exercise/build/src_makefiles && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/useHello.dir/link.txt --verbose=$(VERBOSE)

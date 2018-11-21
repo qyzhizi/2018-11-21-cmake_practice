@@ -4,9 +4,12 @@ SET(LIBRARY_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/lib)
 ADD_EXECUTABLE(helloSLAM helloSLAM.cpp)
 
 # add a lib
-add_library( hello libHelloSLAM.cpp )
+add_library( hello STATIC libHelloSLAM.cpp )
 # add a share lib
 add_library( hello_shared SHARED libHelloSLAM.cpp )
+SET_TARGET_PROPERTIES(hello_shared PROPERTIES OUTPUT_NAME "hello")
+GET_TARGET_PROPERTY(OUTPUT_VALUE hello_shared OUTPUT_NAME)
+MESSAGE(STATUS "This is the hello_shared OUTPUT_NAME:"${OUTPUT_VALUE})
 
 add_executable( useHello useHello.cpp )
 set(CMAKE_INSTALL_PREFIX "/home/qy/2018-11-20-install/1119exercise")
